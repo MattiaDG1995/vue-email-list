@@ -11,7 +11,10 @@
     <div id="root">
 
         <button @click="start">start</button>
-        <div>{{mail}}</div>
+        <ul>
+            <li v-for="newMail in mail" v-if="mail.length == 10">{{newMail}}</li>
+        </ul>
+        
 
     </div>
 

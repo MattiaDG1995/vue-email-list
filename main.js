@@ -8,6 +8,8 @@ var app = new Vue({
 
         start(){
 
+            this.mail=[];
+
             for(let i=0; i < 10; i++){
                 if( this.mail.length < 10){
                     axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
@@ -20,11 +22,11 @@ var app = new Vue({
             }
                 
             }
-        
-            
-            
 
+            
+            
         }
+
 
         
     }
